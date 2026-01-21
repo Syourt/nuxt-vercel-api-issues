@@ -4926,8 +4926,6 @@ __metadata:
   resolution: "nuxt-vercel-api-issues-layer1@workspace:layer1"
   dependencies:
     nuxt: "npm:^4.2.2"
-    vue: "npm:^3.5.27"
-    vue-router: "npm:^4.6.4"
   languageName: unknown
   linkType: soft
 
