@@ -1,3 +1,3 @@
 export default defineEventHandler(async () => {
-	return { message: 'base layer' };
+	return { message: 'api works' };
 });

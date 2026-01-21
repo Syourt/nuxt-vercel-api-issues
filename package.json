@@ -1,12 +1,22 @@
 {
   "name": "nuxt-vercel-api-issues",
   "private": true,
-  "workspaces": [
-    "base",
-    "layer1"
-  ],
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "devDependencies": {
+    "@nuxtjs/robots": "^5.6.7",
+    "@nuxtjs/sitemap": "^7.5.2",
+    "nuxt": "^4.2.2",
+    "typescript": "^5.9.3",
+    "vue": "^3.5.27"
+  },
   "dependencies": {
-    "nuxt": "^4.2.2"
+    "better-sqlite3": "^12.6.2"
   },
   "packageManager": "yarn@4.9.2"
 }
