@@ -12,7 +12,6 @@ export default defineNuxtConfig({
         region: process.env.VERCEL_REGION,
     },
     modules: [
-        '@nuxtjs/robots',
         '@nuxt/test-utils/module',
         '@nuxt/image',
         'dayjs-nuxt',
