@@ -1,5 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
-import {fileURLToPath} from "node:url";
+import { fileURLToPath } from "node:url";
+import { sentryVitePlugin } from '@sentry/vite-plugin';
 
 export default defineNuxtConfig({
     compatibilityDate: '2025-07-15',
@@ -22,6 +23,17 @@ export default defineNuxtConfig({
             gzip: true,
             brotli: true,
         },
+    },
+    vite: {
+        plugins: [
+            // https://gearboxgo.com/articles/web-application-development/setting-up-sentry-with-nuxt-3
+            sentryVitePlugin({
+                disable: !process.env.SENTRY_AUTH_TOKEN,
+                authToken: process.env.SENTRY_AUTH_TOKEN,
+                org: process.env.SENTRY_ORG,
+                project: process.env.SENTRY_PROJECT,
+            }),
+        ],
     },
     routeRules: {
         '/**': { prerender: true },
