@@ -16,7 +16,6 @@ export default defineNuxtConfig({
         '@nuxt/test-utils/module',
         '@nuxt/content',
         '@nuxt/image',
-        '@nuxtjs/tailwindcss',
         'dayjs-nuxt',
         '@nuxt/eslint',
         '@pinia/nuxt',
@@ -79,9 +78,7 @@ export default defineNuxtConfig({
     },
     postcss: {
         plugins: {
-            'tailwindcss/nesting': {},
             'postcss-nested': {},
-            'tailwindcss': {},
             'autoprefixer': {},
         },
     },
