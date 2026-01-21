@@ -15,7 +15,6 @@ export default defineNuxtConfig({
         '@nuxtjs/robots',
         '@nuxtjs/sitemap',
         '@nuxt/test-utils/module',
-        '@nuxt/content',
         '@nuxt/image',
         'dayjs-nuxt',
         '@nuxt/eslint',
