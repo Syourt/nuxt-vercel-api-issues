@@ -11,6 +11,16 @@ export default defineNuxtConfig({
         },
         region: process.env.VERCEL_REGION,
     },
+    modules: [
+        '@nuxtjs/robots',
+        '@nuxtjs/sitemap',
+        '@nuxt/test-utils/module',
+        '@nuxt/content',
+        '@nuxt/image',
+        'dayjs-nuxt',
+        '@nuxt/eslint',
+        '@nuxt/fonts',
+    ],
     nitro: {
         prerender: {
             crawlLinks: true,
